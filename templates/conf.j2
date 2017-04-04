@@ -120,13 +120,13 @@ reporting-disabled = {{influxdb_reporting_disabled}}
   purge-interval = "{{influxdb_hh_purge_interval}}"
 
 ###
-### [cluster]
+### [coordinator]
 ###
 ### Controls non-Raft cluster behavior, which generally includes how data is
 ### shared across shards.
 ###
 
-[cluster]
+[coordinator]
   shard-writer-timeout = "{{influxdb_cluster_shard_writer_timeout}}" # The time within which a shard must respond to write.
   write-timeout = "{{influxdb_cluster_write_timeout}}" # The time within which a write operation must complete on the cluster.
 
